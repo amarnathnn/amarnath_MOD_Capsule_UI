@@ -4,5 +4,6 @@ export class User{
     firstName: string;
     lastName: string;
     contactNumber: string;
+    emailId:string;
     registrationDate: string;
 }

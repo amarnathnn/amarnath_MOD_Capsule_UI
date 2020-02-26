@@ -9,18 +9,15 @@ import { User } from 'src/app/model/User';
 })
 export class UserprofileComponent implements OnInit {
   public userData: User;
-  constructor(private user: UserService) {
-    let username = localStorage.getItem('username');
-    console.log(username);
-    debugger;
-    this.user.getUserById(username).subscribe((value: User) => {
-      console.log(value);
-      this.userData = value;
-      console.log(this.userData);
-    });
+  constructor(private user: UserService) {    
    }
 
   ngOnInit() {
+    let username = localStorage.getItem('username');  
+    this.user.getUserById(username).subscribe((value: User) => {      
+      this.userData = value;
+      //console.log(this.userData);
+    });
   }
 
 }
