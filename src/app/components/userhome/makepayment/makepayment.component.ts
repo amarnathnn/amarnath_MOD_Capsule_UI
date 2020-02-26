@@ -9,10 +9,10 @@ import { ResponseMessage } from 'src/app/model/ResponseMessage';
   styleUrls: ['./makepayment.component.css']
 })
 export class MakepaymentComponent implements OnInit {
-  private mentorId: number;
-  private userId: number;
-  private trainingId: number;
-  private technology: string;
+  public mentorId: number;
+  public userId: number;
+  public trainingId: number;
+  public technology: string;
   public makePaymentResponse: ResponseMessage;
 
 

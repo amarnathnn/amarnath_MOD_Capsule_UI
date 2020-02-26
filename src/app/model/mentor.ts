@@ -4,6 +4,7 @@ export class Mentor {
     skill: string;
     linkedInUrl: string;
     yearsOfExperience: string;
-    email: string;
+    emailId: string;
     fees: number;
+    registrationDate: string;
 }

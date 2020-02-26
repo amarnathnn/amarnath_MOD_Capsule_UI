@@ -12,7 +12,7 @@ import { MentorService } from 'src/app/services/mentor.service';
 })
 export class RegistermentorComponent implements OnInit {
   public registerResponse: ResponseMessage = { errorMessage: "", successMessage: "" };
-  private skills: Skill[] = [];
+  public skills: Skill[] = [];
   selectedTime:string;
   selectedSkill:string;
   constructor(private user: UserService, private router: Router,
