@@ -10,14 +10,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./searchtechnology.component.css']
 })
 export class SearchtechnologyComponent implements OnInit {
-   skills: Skill[]=[];
+   skill: Skill[]=[];
    skillId: number;
    mentors: Mentor[]=[];
 
   constructor(private user: UserService, private router: Router) {
     user.getSkills().subscribe((value: Skill[]) => {
-      this.skills = value;
-      console.log(this.skills);
+      this.skill = value;
+      console.log(this.skill);
     });
   }
 

@@ -10,8 +10,8 @@
         <div class="formgroup">          
         <select (change)="changeSkill($event.target.value)" name="technology" id="" class="form-control form-control-user">
             <option value="0">--All--</option>
-            <option *ngFor="let skill of skills" value={{skill.skillId}}>
-                {{skill.name}}
+            <option *ngFor="let item of skill" value={{item.skillId}}>
+                {{item.name}}
             </option>
         </select>
     </div>        
